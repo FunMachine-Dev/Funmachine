@@ -166,9 +166,13 @@ textarea {
 /* Basic */
 
 .content,
-.major p,
+#main .major p,
 h2 {
 	background-color: white;
+	padding: 1px;
+}
+
+#servicios >* {
 	padding: 1px;
 }
 
@@ -3017,6 +3021,11 @@ table.alt tbody tr td {
 
 /* Features */
 
+.titulo-transp{
+	background-color: transparent !important;
+	color: var(--morado);
+}
+
 .features {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -3772,8 +3781,18 @@ body.is-preload #header.alt .logo {
 	/* espacio entre borde e imagen */
 }
 
+.logos2 {
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    text-align: center;      /* asegura centrado en caso de inline */
+}
 
-.hover-card p {
+
+
+
+
+#main .hover-card p {
 	background-color: #ffffff;
 }
 
@@ -4263,6 +4282,25 @@ body.is-preload #header.alt .logo {
   100% { color: var(--rosa); text-transform: uppercase; }
 }
 
+/* para qué soy bueno */
+
+#servicios{
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 5em 5em 3em 5em;
+	width: calc(100% + 2em);
+	margin: 0 0 3em -2em;
+}
+
+#servicios .titulo{
+	background-color: none!important;
+}
 
 /* contacto */
 
