@@ -1,6 +1,24 @@
 
 (function($) {
 
+
+const menuToggle = document.getElementById('menuToggle');
+const navUl = document.querySelector('#nav ul');
+const navLinks = navUl.querySelectorAll('a');
+
+// Mostrar/ocultar menú al click en el botón sandwich
+menuToggle.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
+
+// Ocultar menú al hacer click en cualquier enlace
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navUl.classList.remove('show');
+  });
+});
+
+
 	var	$window = $(window),
 		$body = $('body'),
 		$main = $('#main');
